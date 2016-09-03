@@ -1,0 +1,9 @@
+* mdo_refined - An org-page theme
+
+mdo_refined is an [[https://github.com/kelvinh/org-page][org-page]] theme, built on the kelvinh's orginal mdo theme. It boasts better long-form readability, total lack of comments, and a couple other improvements. 
+
+** Installation
+#+BEGIN_SRC sh :results output
+  git clone https://github.com/peixian/mdo_refined
+  ln -s ./mdo_refined/ ~/.emacs.d/elpa/org-page-xxxx.xx/themes/mdo_refined
+#+END_SRC
