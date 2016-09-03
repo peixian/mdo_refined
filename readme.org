@@ -7,3 +7,15 @@ mdo_refined is an [[https://github.com/kelvinh/org-page][org-page]] theme, built
   git clone https://github.com/peixian/mdo_refined
   ln -s ./mdo_refined/ ~/.emacs.d/elpa/org-page-xxxx.xx/themes/mdo_refined
 #+END_SRC
+
+Then just change the theme with ~M-x customize-group~ and ~org-page~ to ~mdo_refined~, and publish with ~M-x op/do-publication~ as normal. 
+
+** Features
+*** [[https://fonts.google.com/specimen/PT+Serif][PT Serif]] as the post font face. 
+I found that for long-form articles and posts Courier and the default mono-spaced fonts were a huge hassle to read. This is a simple one liner change in ~main.css~, under the ~.post~ section.
+*** No comments. 
+I've never been a fan of comments, so I've simply removed them from the template. You can diff and find the original comment code if you'd like to restore the comments, however. 
+*** Various bug fixes
+- The issue with the transparent background for the table of contents has been fixed.
+- The bug with inconsistent dividers between posts has been fixed.
+- There's a tiny bit of color now! The headers are demarked by a dark, UIUC blue. 

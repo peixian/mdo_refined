@@ -57,7 +57,7 @@ h1, h2, h3 {
 h1:before, h2:before, h3:before {
     position: absolute;
     top: auto;
-    color: #ccc;
+    color: blueviolet;
     display: none;
 }
 h1:before {
@@ -98,7 +98,7 @@ hr:after {
 }
 ul, ol {
     padding: 0;
-    margin: 0 0 20px;
+    
 }
 
 code, pre {
@@ -244,11 +244,6 @@ table th.right, table td.right {
     font-family: 'PT Serif', Georgia, serif;
 }
 
-.post:after {
-    display: block;
-    content: "----------------------------------------------------------------";
-    color: #ccc;
-}
 .post img {
     max-width: 100%;
 }
@@ -268,6 +263,10 @@ table th.right, table td.right {
     color: #ccc;
 }
 
+.post .section-number-2:after {
+    content: ".";
+}
+
 /* special for li in pre */
 .post pre li {
     list-style-type: decimal;
@@ -283,8 +282,15 @@ table th.right, table td.right {
     margin: -10px 0 -10px;
     color: #999;
 }
-.post-info + .post-info:before {
+.post-mod-date:before, .post-author:before{
     content: "\2223 \00a0";
+}
+
+.post-meta:before {
+    content: "----------------------------------------------------------------";
+    display: block;
+    margin-top: -1px;
+    color: #ccc;
 }
 .post-meta:after {
     content: "----------------------------------------------------------------";
@@ -292,6 +298,7 @@ table th.right, table td.right {
     margin-top: -1px;
     color: #ccc;
 }
+
 
 /* table of content */
 #table-of-contents {
@@ -321,7 +328,6 @@ table th.right, table td.right {
 
 #table-of-contents ul {
     margin-left: 14pt;
-    margin-bottom: 10pt;
     padding: 0
 }
 
