@@ -228,15 +228,13 @@ table th.right, table td.right {
     background-color: #f9f9f9;
     width: 160px;
 }
-.masthead img.avatar {
-    position: relative;
-    float: right;
-    margin-top: -100px;
-    margin-bottom: -100%;
-    margin-right: 10%;
-    width: 200px;
-    background-color: #fff;
+
+img.avatar {
+    display: block;
+    width: 96px;
+    margin: 0 auto;
 }
+
 /* post */
 .post {
     position: relative;
@@ -353,13 +351,13 @@ table th.right, table td.right {
 
 /* footer */
 .footer {
-    margin: 80px 0 0;
+    margin: 2em;
     text-align: center;
-    font-size: 15px;
+    font-size: .7em;
     color: #999;
 }
 .footer > p {
-    margin: 0;
+    margin-top: 1em;
     line-height: 1.5;
 }
 .footpara {
