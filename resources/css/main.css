@@ -98,7 +98,6 @@ hr:after {
 }
 ul, ol {
     padding: 0;
-    
 }
 
 code, pre {
@@ -144,6 +143,7 @@ a {
     color: #000;
     text-decoration: none;
 }
+
 sup a:before {
     content: "[";
 }
@@ -226,6 +226,16 @@ table th.right, table td.right {
 
 .post .section-number-2:after {
     content: ".";
+}
+
+.post a {
+    color: #3873AD;
+}
+
+/* index */
+
+.index a {
+    color: #000;
 }
 
 /* special for li in pre */
@@ -311,6 +321,10 @@ table th.right, table td.right {
     display: block;
     padding: 0.5em;
     margin-top: -1.5em;
+}
+
+/* katex */
+.katex-html {
 }
 
 /* footer */
